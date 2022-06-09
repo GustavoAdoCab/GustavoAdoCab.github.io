@@ -1,0 +1,113 @@
+@media screen and (max-width: 390px){
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    header{
+      flex-wrap: wrap;
+      padding: 0px;    
+    }
+    figure{
+        padding-top: 20px;
+        width: 140px;
+    }
+    figure img{
+        width: 100%;
+    }
+    #iconomenu{
+      display: block;
+      color: var(--naranja);
+      font-size: 30px;
+      padding-top: 20px;
+      padding-left: 120px;
+    }
+    .menu_dos{
+      width: 100%;
+    }
+    .contenedormenu{
+      background-color: #f3f3f3;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: stretch;
+      padding-left: 0px;
+    } 
+    .contenedormenu li {  
+      width: 100%;
+    }
+    .contenedormenu a{
+      background-color: var(--blanco);
+      display: block;
+      padding: 10px;
+      width: 100%;
+      text-transform: uppercase;
+      color: var(--negro);
+      border: 0;
+      border-bottom: 1px var(--blanco_gris) solid;
+    }
+    #menu{
+      display: none;
+    }
+    #menu .boton_naranja{
+        display: none;
+    }
+
+    /*INFORMACION*/
+    .responsive{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .responsive article{
+        padding: 10px;
+        width: 100%;
+    }
+    .responsive figure{
+        width: 370px;
+    }
+
+    /*Efecto Parallax*/
+    .parallaxs{
+        height: 400px;
+        background-position: -200px 10px;
+    }
+    .parallaxs p{
+        text-align: center;
+        font-size: 42px;
+        line-height: 40px;
+    }
+
+    center h1{
+        font-size: 32px;
+        line-height: 36px;
+    }
+
+     /*MODAL*/
+     .rojo{
+      top: -25px;
+      right: -184px;
+    }
+    .estructuramodal{
+        border-radius: 10px;
+        width: 350px;
+    }
+    
+    /*Footer*/
+    .rect_naranja h1{
+      font-size: 23px;
+    }
+    #copy{
+        font-size: 10px;
+    }
+}
+
+/*QUERY 375Px*/
+
+@media screen and (max-width: 375px){
+    .rect_naranja h1{
+        font-size: 20px;
+    }
+    #copy{
+        font-size: 8px;
+    }
+
+}

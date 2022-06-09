@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="estilo_movil.css">
+    <link rel="stylesheet" href="fancybox/jquery.fancybox.css" />
+    <script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src='https://kit.fontawesome.com/2ee0245f3d.js' crossorigin='anonymous'></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="responsiveslides.min.js"></script>
+    <script type="text/javascript" src="jquery.tinycarousel.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="fancybox/jquery.fancybox.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function()
+      {
+        $('#slider1').tinycarousel();
+      });
+    </script>
+    <script>
+      $(function () {
+        $("#slider4").responsiveSlides({
+          auto: false,
+          pager: false,
+          nav: true,
+          speed: 500,
+          namespace: "callbacks",
+          before: function () {
+            $('.events').append("<li>before event fired.</li>");
+          },
+          after: function () {
+            $('.events').append("<li>after event fired.</li>");
+          }
+        });
+      });
+    </script>
+</head>
+<body>
+  <script src="wow.min.js"></script>
+              <script>
+              new WOW().init();
+  </script>
+    <header class="ancho">
+        <figure id="im">
+            <a href="index.html"><img src="imagenes/logo1.png" alt="" /></a> 
+        </figure>
+        <i id="iconomenu" class="fas fa-bars fa"></i>
+        <nav class="menu_dos ancho">
+         <ul id="menu" class="contenedormenu">
+          <li><a href="#">Home</a></li>
+          <li><a href="demos.html">Demo</a></li>
+          <li><a href="inner.html">Inner Pages</a></li>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">Feature</a></li>
+          <li><a href="#">Blog</a></li>
+          <a class="boton_naranja" id="Btn" href="#">Get Started</a>
+         </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div class="callbacks_container">
+            <ul class="rslides" id="slider4">
+              <li>
+                <img src="imagenes/slide/foto1.jpg" alt="">
+                <h1 class="caption">The #1 Best Selling IT Solution And Multi-Porpuse HTML5 Template.</h1>
+              </li>
+              <li>
+                <img src="imagenes/slide/foto2.jpg" alt="">
+                <h1 class="caption">A high-performant Multi-Porpuse WordPress theme suitable for any kind.</h1>
+              </li>
+              <li>
+                <img src="imagenes/slide/foto4.jpg" alt="">
+                <h1 class="caption">All In One HTML5 Package For a Single Price.</h1>
+              </li>
+            </ul>
+          </div>
+    </section>
+
+    <section class="iconos_web ancho">
+        <article class="wow animate__animated animate__backInLeft animate__delay-.5s">
+            <figure>
+                <img src="imagenes/iconos/html.png" alt="">
+            </figure>
+            <h1>HTML5</h1>
+        </article>
+
+        <article class="wow animate__animated animate__backInLeft animate__delay-1s">
+            <figure>
+                <img src="imagenes/iconos/css.png" alt="">
+            </figure>
+            <h1>CSS</h1>
+        </article>
+
+        <article class="wow animate__animated animate__backInRight animate__delay-1s">
+            <figure>
+                <img src="imagenes/iconos/jquery.png" alt="">
+            </figure>
+            <h1>JQUERY</h1>
+        </article>
+
+        <article class="wow animate__animated animate__backInRight animate__delay-.5s">
+          <figure>
+              <img src="imagenes/iconos/angular.png" alt="">
+          </figure>
+          <h1>ANGULAR</h1>
+      </article>
+    </section>
+
+    <section class="rectangulo_info ancho">
+      <div class="izquierda_info">
+        <h1>All In One HTML5 Package For a Single Price.</h1>
+      </div>
+      <div class="derecha_info">
+        <article>
+          <i class="fa-solid fa-laptop-code"></i>
+          <p>Ready Home Page</p>
+        </article>
+
+        <article>
+          <i class="fa-brands fa-js-square"></i>
+          <p>JavaScript</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="contenedor_anima ancho">
+      <h1 class="wow animate__animated animate__bounceInLeft animate__delay-.6s">35+ Stunning and <br> Unique Demos</h1>
+      <i class="wow animate__animated animate__bounceInLeft animate__delay-.6s fa-solid fa-minus"></i>
+
+      <div class="demos">
+        <article class="banner">
+          <figure>
+            <img src="imagenes/demos/demo1.jpg" alt="">
+          </figure>
+          <div id="info">
+            <a href="#">Live Demo</a>
+          </div>
+        </article>
+
+        <article class="banner">
+          <figure>
+            <img src="imagenes/demos/demo2.jpg" alt="">
+          </figure>
+          <div id="info">
+            <a href="#">Live Demo</a>
+          </div>
+        </article>
+
+        <article class="banner">
+          <figure>
+            <img src="imagenes/demos/demo3.jpg" alt="">
+          </figure>
+          <div id="info">
+            <a href="#">Live Demo</a>
+          </div>
+        </article>
+
+        <article class="banner">
+          <figure>
+            <img src="imagenes/demos/demo4.jpg" alt="">
+          </figure>
+          <div id="info">
+            <a href="#">Live Demo</a>
+          </div>
+        </article>
+
+        <article class="banner">
+          <figure>
+            <img src="imagenes/demos/demo5.jpg" alt="">
+          </figure>
+          <div id="info">
+            <a href="#">Live Demo</a>
+          </div>
+        </article>
+
+        <article class="banner">
+          <figure>
+            <img src="imagenes/demos/demo6.jpg" alt="">
+          </figure>
+          <div id="info">
+            <a href="#">Live Demo</a>
+          </div>
+        </article>
+      </div>
+    </section>
+    <br><br>
+
+    <article>
+      <div id="contenedoryoutube">
+        <iframe
+          src="https://www.youtube.com/embed/7UIBIaEZVWw"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </article>
+
+    <div id="slider1">
+      <a class="buttons prev" href="#"><i class="fa-solid fa-angle-left"></i></a>
+      <div class="viewport">
+        <ul class="overview">
+          <li>
+            <img src="imagenes/carrousel/carrousel1.jpg"/>
+          </li>
+          <li>
+            <img src="imagenes/carrousel/carrousel2.jpg"/>
+          </li>
+          <li>
+            <img src="imagenes/carrousel/carrousel3.jpg"/>
+          </li>
+          <li>
+            <img src="imagenes/carrousel/carrousel4.jpg"/>
+          </li>
+          <li>
+            <img src="imagenes/carrousel/carrousel5.jpg"/>
+          </li>
+          <li>
+            <img src="imagenes/carrousel/carrousel6.jpg"/>
+          </li>
+        </ul>
+      </div>
+      <a class="buttons next" href="#"><i class="fa-solid fa-angle-right"></i></a>
+    </div>
+    <br>
+
+    <!--MODAL-->
+
+    <section id="modal" class="contenidomodal">
+      <div class="estructuramodal">
+        <div class="titulo">
+          <h3>Contact Us</h3>
+          <i id="cerrarbtn" class="rojo fa-solid fa-square-xmark"></i>
+        </div>
+        <div class="formulario">
+          <p>If you have any questions concerning our services, please fill out the contact form below.</p>
+          <form action="">
+            <input type="text" placeholder="Name*" required />
+            <input type="email" placeholder="E-mail*" required />
+            <textarea name="" id="" placeholder="Messaje*" required></textarea>
+            <br>
+            <button>Enviar</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <br>
+    <footer>
+      <div class="ancla">
+        <i id="subir" class="fa-solid fa-angle-up"></i>
+      </div>
+      <div style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-11.84,3.48 C149.99,150.00 354.40,81.42 506.77,10.38 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #FF4500;"></path></svg></div>
+      <div class="rect_naranja">
+        <h1>What are you waiting for?</h1>
+        <p>Get your copy of itsoft now!</p>
+        <a id="Btn1" href="#">Buy The itsoft Now</a>
+        <section class="redes">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-linkedin-in"></i>
+        </section>
+        <p id="copy">© Copyright 2021 Dream-IT. All rights reserved.</p>
+      </div>
+    </footer>    
+    
+    <script src="script.js"></script> 
+</body>
+</html>

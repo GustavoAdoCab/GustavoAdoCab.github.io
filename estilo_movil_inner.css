@@ -1,0 +1,144 @@
+@media screen and (max-width: 390px){
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    header{
+      flex-wrap: wrap;
+      padding: 0px;    
+    }
+    figure{
+        padding-top: 20px;
+        width: 140px;
+    }
+    figure img{
+        width: 100%;
+    }
+    #iconomenu{
+      display: block;
+      color: var(--naranja);
+      font-size: 30px;
+      padding-top: 20px;
+      padding-left: 120px;
+    }
+    .menu_dos{
+      width: 100%;
+    }
+    .contenedormenu{
+      background-color: #f3f3f3;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: stretch;
+      padding-left: 0px;
+    } 
+    .contenedormenu li {  
+      width: 100%;
+    }
+    .contenedormenu a{
+      background-color: var(--blanco);
+      display: block;
+      padding: 10px;
+      width: 100%;
+      text-transform: uppercase;
+      color: var(--negro);
+      border: 0;
+      border-bottom: 1px var(--blanco_gris) solid;
+    }
+    #menu{
+      display: none;
+    }
+    #menu .boton_naranja{
+        display: none;
+    }
+
+    center h1{
+      padding-top: 10px;
+      font-size: 24px;
+      line-height: 30px;
+    }
+    center i{
+      font-size: 65px;
+      color: var(--naranja);
+    }
+
+    /*PESTAÑAS O TAB JQUERY*/
+    #tabs-1 figure{
+      width: 310px;
+    }
+    #tabs-2 figure{
+      width: 300px;
+    }
+    #tabs-3 figure{
+      width: 310px;
+    }
+
+      /*ACORDEON*/
+    .preguntas{
+      max-width: 1200px;
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+      flex-direction: column;
+    }
+    .izquierda{
+      width: 100%;
+      padding: 5px;
+    }
+    .izquierda h1{
+      padding: 10px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 30px;
+      font-weight: 900;
+    }
+    .derecha{
+      width: 100%;
+    }
+    .derecha figure{
+      width: 200px;
+    }
+    
+    .acordeon{
+      width: 100%;
+      margin: 0px;
+      padding-left: 10px;
+    }
+
+    .acordeon_titulo{
+        font-size: 15px; 
+    }
+
+    .acordeon_contenido{
+      padding-left: 0;
+    }
+
+     /*MODAL*/
+    .rojo{
+      top: -25px;
+      right: -184px;
+    }
+    .estructuramodal{
+        border-radius: 10px;
+        width: 350px;
+    }
+    
+   /*Footer*/
+   .rect_naranja h1{
+    font-size: 23px;
+    }
+    #copy{
+        font-size: 10px;
+    }
+}
+
+/*QUERY 375Px*/
+
+@media screen and (max-width: 375px){
+    .rect_naranja h1{
+        font-size: 20px;
+    }
+    #copy{
+        font-size: 8px;
+    }
+
+}

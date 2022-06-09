@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --gris: #333;
+    --naranja: orangered;
+    --blanco: white;
+    --margen: 15px;
+    --blanco_gris: #DEE2E6;
+    --negro: black;
+}
+body{
+    font-family: helvetica;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333;
+}
+.ancho{
+    max-width: 1200px;
+    margin: auto;
+}
+/*MENU RESPONSIVE*/
+
+header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    padding: 20px;
+}
+#iconomenu {
+    display: none;
+}
+figure{
+    width: 170px;
+}
+figure img{
+    width: 100%;
+}
+.contenedormenu{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    padding-left: 130px;
+}
+.contenedormenu a{
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: var(--naranja);
+    font-weight: 900;
+    font-size: 15px;
+    padding: 10px 10px;
+}
+.contenedormenu .boton_naranja{
+    display: inline-block;
+    border: 1px var(--naranja);
+    padding: 10px 30px;
+    border-radius: 5px;
+    color: var(--blanco);
+    background-color: var(--naranja);
+}
+
+center h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 40px;
+    margin: 0;
+}
+center i{
+    font-size: 65px;
+    color: var(--naranja);
+}
+
+/*Retratos*/
+
+.retratos{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.retratos article{
+    display: flex;
+    height: 360px;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-direction: column;
+    position: relative;
+}
+
+/*FILTROS A FOTOS */
+
+.retratos article #filter{
+    filter: brightness(0.5);
+    transition: all .5s;
+}
+.retratos article #filter:hover{
+    filter: brightness(0.9);
+}
+
+/*EFECTO RECTANGULO NARANJA CON BEFORE*/
+.rectangulo{
+    position: absolute;
+    width: 219.5px;
+    height: 100px;
+    background-color: var(--gris);
+    top: 72%;
+    left: 0;
+    z-index: 1;
+}
+.rectangulo:before{
+    content: "";
+    position: absolute;
+    width: 2%;
+    height: 100px;
+    top: 0%;
+    left: 0;
+    z-index: 2;
+    background-color: var(--naranja);
+    transition: all .5s ease;
+}
+.rectangulo:hover:before{
+    width: 100%;
+}
+/*FIN*/
+
+/*CIRCULO*/
+.circulo{
+    margin: auto;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: var(--naranja);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -15%;
+    right: 10%;
+    cursor: pointer;
+    z-index: 2;
+    transition: all .5s ease;
+}
+.circulo i{
+    text-align: center;
+    font-size: 15px;
+}
+.circulo:hover{
+    background-color: var(--gris);
+    transition: all .5s ease;
+}
+.descripcion{
+    position: absolute;
+    z-index: 3;
+    top: 80%;
+    left: 9%;
+}
+.descripcion h2{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--blanco);
+    font-size: 20px;
+}
+.descripcion p{
+    font-family: 'Nunito', sans-serif;
+    color: var(--blanco);
+    font-size: 15px;
+}
+
+.retratos figure{
+    width: 220px;
+}
+.retratos figure img{
+    width: 100%;
+    object-fit: cover;
+}
+
+/*PESTAÑAS O TAB JQUERY*/
+#tabs-1 p{
+    text-align: justify;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+}
+#tabs-1 figure{
+    width: 500px;
+}
+#tabs-1 figure img{
+    width: 100%;
+}
+
+
+#tabs-2 p{
+    text-align: justify;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+}
+#tabs-2 figure{
+    padding: 10px;
+    width: 470px;
+}
+#tabs-2 figure img{
+    width: 100%;
+}
+
+#tabs-3 p{
+    text-align: justify;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+}
+#tabs-3 figure{
+    padding: 10px;
+    width: 470px;
+}
+#tabs-3 figure img{
+    width: 100%;
+}
+
+/*ACORDEON*/
+.preguntas{
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: row;
+}
+.izquierda{
+    width: 60%;
+    padding: 10px;
+}
+.izquierda h1{
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+}
+.derecha{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+
+}
+.derecha figure{
+    width: 400px;
+}
+.derecha figure img{
+    width: 100%;
+    height: 100%;
+}
+
+.acordeon{
+    width: 100%;
+    margin: 10px;
+    padding-left: 15px;
+}
+.acordeon_titulo{
+    color: var(--negro);
+    padding: 0;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+.acordeon_contenido{
+    display: block;
+    width: 90%;
+    text-align: justify;
+    padding-left: 47px;
+    padding-top: 0;
+    margin: 0;
+    font-size: 12px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 100;
+    color: var(--gris);
+    line-height: 24px;
+}
+.icono1, .icono2, .icono3, .icono4{
+    padding: 6px;
+    text-align: center;
+    color: white;
+    background-color: var(--naranja);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    font-size: 13px;
+    transform: rotate(0deg);
+    transition: all .5s;
+}
+.rotar{
+    transition: all .5s;
+    transform: rotate(180deg);
+}
+
+/*MODAL*/
+.contenidomodal{
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    position: fixed;
+    z-index: 10;
+    overflow: auto;
+    top: 0;
+    left: 0;
+}
+.titulo{
+    font-family: 'Montserrat', sans-serif; 
+    padding: 20px;
+    font-size: 20px;
+    color: var(--gris);
+    position: relative;
+}
+.titulo i{
+    color: var(--naranja);
+}
+.rojo{
+    position: absolute;
+    z-index: 200;
+    top: -25px;
+    right: -235px;
+    cursor: pointer;
+}
+.estructuramodal{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    z-index: 101;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.formulario p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    color: gray;
+    padding: 20px;
+    padding-top: 0;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+    padding-top: 0;
+}
+input{
+    font-family: 'Nunito', sans-serif;
+    border-radius: 15px;
+    border: 1px gray solid;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    font-size: 10px;
+    font-weight: 900;
+}
+textarea{
+    border-radius: 15px;
+    border: 1px gray solid;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    min-height: 100px;
+    resize: none;
+    font-size: 10px;
+    font-weight: 750;
+}
+form button{  
+    padding: 8px 20px;
+    text-decoration: none;
+    background-color: var(--naranja);
+    color: white;
+    border: var(--naranja) solid;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: 'Nunito', sans-serif;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+form button:hover{
+    transition: all 1s ease;
+    background-color: var(--gris);
+    border: var(--gris) solid;
+    border-radius: 20px;
+}
+
+/*Footer*/
+footer{
+    position: relative;
+}
+footer .ancla i{
+    position: absolute;
+    z-index: 6;
+    /*top336%*/
+    top: 85%;
+    right: 2%;
+    padding: 10px 2px;
+    font-size: 15px;
+    color: var(--blanco);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: var(--gris);
+    text-align: center;
+    cursor: pointer;
+}
+.rect_naranja{
+    width: 100%;
+    padding: 10px;
+    background-color: var(--naranja);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--blanco_gris);
+}
+.rect_naranja h1{
+    margin: 0;
+    font-size: 40px;
+}
+.rect_naranja p{
+    font-weight: 600;
+}
+.rect_naranja a{
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px 30px;
+    border-radius: 5px;
+    background-color: var(--gris);
+    color: var(--blanco_gris);
+    transition: all 1s;  
+}
+.rect_naranja a:hover{
+    transition: all 1s;
+    color: black;
+    font-size: 18px;
+    background-color: var(--blanco_gris);
+}
+.redes{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.redes i{
+    font-size: 20px;
+    cursor: pointer;
+}
+#copy{
+    padding-top: 25px;
+}
